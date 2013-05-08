@@ -1,5 +1,16 @@
-#Bit Kit - Chrome Packaged Application
+#Bitkit - Chrome Packaged Application
 Bitcoin Utilities for Chrome
+
+## Description for Google Chrome App Store
+Bitkit provides a number of utilities to help you manage your Bitcoin portfolio both on and offline.
+
+Utlities include for:
+*Generating Bitcoin sddresses
+*Sending Bitcoin transactions
+*Signing messages with your Bitcoin private key
+*And much much more...
+
+Bitkit is based on the work of the good people at brainwallet.org (https://github.com/brainwallet/brainwallet.github.com+)
 
 ## License
 
