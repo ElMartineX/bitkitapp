@@ -9,17 +9,17 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="256"
-   height="256"
+   width="1280"
+   height="800"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="logo_splash.svg"
-   inkscape:export-filename="C:\Users\John\Projects\bitkitapp\logo_splash.png"
-   inkscape:export-xdpi="360"
-   inkscape:export-ydpi="360">
+   sodipodi:docname="logo_splash_1280_800.svg"
+   inkscape:export-filename="C:\Users\John\Projects\bitkitapp\graphics\logo_splash.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <title
-     id="title2985">Bit Kit Logo</title>
+     id="title2985">Bit Kit Splash Screen</title>
   <defs
      id="defs4">
     <linearGradient
@@ -54,10 +54,10 @@
          in="SourceGraphic" />
     </filter>
     <linearGradient
-       y2="100%"
-       x2="0%"
-       y1="0%"
-       x1="0%"
+       y2="1"
+       x2="0"
+       y1="0"
+       x1="0"
        id="coin-gradient-4">
       <stop
          id="stop12-8"
@@ -265,19 +265,12 @@
     </filter>
     <filter
        inkscape:collect="always"
-       id="filter4125">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="0.99317131"
-         id="feGaussianBlur4127" />
-    </filter>
-    <filter
-       inkscape:collect="always"
        id="filter4129"
        x="-0.056125391"
        width="1.1122508"
-       y="-0.33155557"
-       height="1.6631111">
+       y="-0.33155558"
+       height="1.6631111"
+       color-interpolation-filters="sRGB">
       <feGaussianBlur
          inkscape:collect="always"
          stdDeviation="6.3749963"
@@ -291,11 +284,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7689261"
-     inkscape:cx="544.22293"
-     inkscape:cy="41.799397"
+     inkscape:zoom="0.38446305"
+     inkscape:cx="963.50783"
+     inkscape:cy="364.45638"
      inkscape:document-units="px"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1366"
      inkscape:window-height="715"
@@ -310,7 +303,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title>Bit Kit Logo</dc:title>
+        <dc:title>Bit Kit Splash Screen</dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -318,21 +311,23 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Layer"
-     style="display:inline">
+     style="display:inline"
+     transform="translate(0,544)">
     <rect
        style="fill:#ffffff;fill-opacity:1;stroke:none"
        id="rect3825"
-       width="256"
-       height="256"
+       width="1280"
+       height="800"
        x="0"
-       y="0"
+       y="-544"
        ry="0" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="Layer#1"
-     style="display:inline">
+     style="display:inline"
+     transform="translate(0,544)">
     <g
        id="g16"
        transform="matrix(8,0,0,8,-208.12105,-130.74507)" />
@@ -345,11 +340,12 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-796.36218)">
+     transform="translate(0,-252.36218)">
     <g
-       id="g4136">
+       id="g4136"
+       transform="matrix(4.0667663,0,0,4.0667663,129.26542,-3122.1088)">
       <g
-         style="display:inline;fill:#fce94f"
+         style="fill:#fce94f;display:inline"
          transform="matrix(0.54410459,0,0,0.54410459,57.078112,867.58323)"
          id="g3804-7-3">
         <path
@@ -365,7 +361,7 @@
       </g>
       <path
          transform="matrix(0.8,0,0,0.8,22.015066,798.38456)"
-         d="m 265.76727,250.87265 a 136.30186,23.073042 0 1 1 -272.6037263,0 136.30186,23.073042 0 1 1 272.6037263,0 z"
+         d="m 265.76727,250.87265 c 0,12.74289 -61.02442,23.07304 -136.30186,23.07304 -75.277443,0 -136.3018663,-10.33015 -136.3018663,-23.07304 0,-12.74289 61.0244233,-23.07304 136.3018663,-23.07304 75.27744,0 136.30186,10.33015 136.30186,23.07304 z"
          sodipodi:ry="23.073042"
          sodipodi:rx="136.30186"
          sodipodi:cy="250.87265"
@@ -460,5 +456,6 @@
   <g
      inkscape:groupmode="layer"
      id="layer5"
-     inkscape:label="Layer#3" />
+     inkscape:label="Layer#3"
+     transform="translate(0,544)" />
 </svg>
