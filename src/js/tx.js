@@ -457,17 +457,17 @@ function tx_fetch(url, onSuccess, onError, postdata) {
     });
 }
 
-var tx_dest = '15ArtCgi3wmpQAAfYx4riaFmo4prJA4VsK';
-var tx_sec = '5KdttCmkLPPLN4oDet53FBdPxp4N1DWoGCiigd3ES9Wuknhm8uT';
-var tx_addr = '12c6DSiU4Rq3P4ZxziKxzrL5LmMBrzjrJX';
-var tx_unspent = '{"unspent_outputs":[{"tx_hash":"7a06ea98cd40ba2e3288262b28638cec5337c1456aaf5eedc8e9e5a20f062bdf","tx_index":5,"tx_output_n": 0,"script":"4104184f32b212815c6e522e66686324030ff7e5bf08efb21f8b00614fb7690e19131dd31304c54f37baa40db231c918106bb9fd43373e37ae31a0befc6ecaefb867ac","value": 5000000000,"value_hex": "012a05f200","confirmations":177254}]}';
+var tx_dest = '';
+var tx_sec = '';
+var tx_addr = '';
+var tx_unspent = '{"unspent_outputs":[{"tx_hash":"0","tx_index":5,"tx_output_n": 0,"script":"0","value": 50000,"value_hex": "0","confirmations":0}]}';
 
 function tx_test() {
     var secret = Bitcoin.Base58.decode(tx_sec).slice(1, 33);
     var eckey = new Bitcoin.ECKey(secret);
     TX.init(eckey);
     TX.parseInputs(tx_unspent, TX.getAddress());
-    TX.addOutput(tx_dest, 50.0);
+    TX.addOutput(tx_dest, 0.0005);
     var sendTx = TX.construct();
     console.log(TX.toBBE(sendTx));
     console.log(Crypto.util.bytesToHex(sendTx.serialize()));

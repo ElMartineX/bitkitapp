@@ -1102,7 +1102,7 @@
         $('#compressed').click(update_gen_compressed);
         gen_compressed = $('#compressed').hasClass('active');
 
-        $('#pass').val('correct horse battery staple');
+        $('#pass').val('');
         calc_hash();
         generate();
         $('#pass').focus();
@@ -1159,9 +1159,9 @@
         $("body").on("click", "#enc_to .btn", update_enc_to);
 
         // sign
-        $('#sgSec').val('5JeWZ1z6sRcLTJXdQEDdB986E6XfLAkj9CgNE4EHzr5GmjrVFpf');
-        $('#sgAddr').val('17mDAmveV5wBwxajBsY7g1trbMW1DVWcgL');
-        $('#sgMsg').val("C'est par mon ordre et pour le bien de l'Etat que le porteur du présent a fait ce qu'il a fait.");
+        $('#sgSec').val('');
+        $('#sgAddr').val('');
+        $('#sgMsg').val("");
 
         onInput('#sgSec', sgOnChangeSec);
         onInput('#sgMsg', sgOnChangeMsg);
