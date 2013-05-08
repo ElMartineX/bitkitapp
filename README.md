@@ -10,7 +10,20 @@ Utilities include for:
 *Signing messages with your Bitcoin private key
 *And much much more...
 
-Bitkit is based on the work of the good people at brainwallet.org (https://github.com/brainwallet/brainwallet.github.com).
+Bitkit is based on the work of the good people at [brainwallet.org](https://github.com/brainwallet/brainwallet.github.com).
+
+##Installation
+###Normal
+1. Navigate to the project's installation [page](https://chrome.google.com/webstore/detail/bit-kit/dghafchcacmkakfojlnihphhabgggmpk)
+2. Click the "ADD TO CHROME" button.
+3. Follow any remaining onscreen instructions.
+
+###Developer
+If you're using chrome's developer mode, you can also load the unpacked extension from the 'src' directory.
+1. Visit '[chrome://extensions/](chrome://extensions/)' on your web browser.
+2. Enable the 'Developer mode' checkbox near the top.
+3. Click the 'Load unpacked extension…' button.
+4. Navigate to the the ./src diretory and confirm your selection.
 
 ## License
 
