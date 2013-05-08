@@ -50,39 +50,48 @@
             <h1>Generate</h1>
             <form action="/" class="form-vertical" method="get">
             <fieldset>
-                            <div class="control-group"> 
-                                <label class="control-label" for="addr">Address</label> 
-                                <div class="controls"> 
-                                    <input class="span4" id="addr" readonly type="text"> 
-                                </div>
-                            </div>
-                            <div class="control-group"> 
-                                <label class="control-label" for="addr">QR Code</label> 
-                                <div class="controls"> 
-                                    <div id="qr"></div> 
-                                </div>
-                            </div>
-                            <div class="control-group"> 
-                                <label class="control-label" for="uncompressed">Compression</label> 
-                                <div class="controls"> 
-                                    <div class="btn-group" data-toggle="buttons-radio" id="gen_comp"> 
-                                        <button class="btn active" id="uncompressed" title="Uncompressed keys" type="button">Uncompressed</button>
-                                        <button class="btn" id="compressed" title="Compressed keys" type="button">Compressed</button>
-                                    </div>
-                                </div>
-                            </div>
+
                 <div class="control-group"> 
                     <div class="row"> 
-                        <div class="span10"> 
+                        <div >
+                <div class="control-group"> 
+                    <label class="control-label" for="addr">Address</label> 
+                    <div class="controls"> 
+                        <input class="span5" id="addr" readonly type="text"> 
+                    </div>
+                </div>
+                <div class="control-group"> 
+                    <label class="control-label" for="addr">QR Code</label> 
+                    <div class="controls"> 
+                        <div id="qr"></div> 
+                    </div>
+                </div>
+                <div class="control-group"> 
+                    <label class="control-label" for="uncompressed">Compression</label> 
+                    <div class="controls"> 
+                        <div class="btn-group" data-toggle="buttons-radio" id="gen_comp"> 
+                            <button class="btn active" id="uncompressed" title="Uncompressed keys" type="button">Uncompressed</button>
+                            <button class="btn" id="compressed" title="Compressed keys" type="button">Compressed</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
                             <div class="control-group"> 
-                                <label class="control-label" for="from_pass">Get Address From</label> 
+                                <label class="control-label" for="from_pass">Get Address From<span class="help-inline" id="genMsg" style="margin: 5px;"></span></label> 
                                 <div class="controls"> 
                                     <div class="btn-group pull-left" data-toggle="buttons-radio" id="gen_from"> 
                                         <button class="btn active" id="from_pass" title="Single SHA256" type="button">Passphrase</button> 
                                         <button class="btn" id="from_hash" title="Hex-encoded" type="button">Secret Exponent</button> 
-                                        <button class="btn" id="from_sec" title="Base58-encoded" type="button">Private Key</button><button class="btn" id="random" title="Random" type="button"><i class="icon-repeat"></i></button>  
+                                        <button class="btn" id="from_sec" title="Base58-encoded" type="button">Private Key</button><button class="btn" id="random" title="Random" type="button">Random!</button>  
                                     </div>
-                                    <div class="help-inline" id="genMsg" style="margin: 5px;"></div>
+                                    <br /><br />
+                                    
                                 </div>
                             </div>
                             <div class="control-group"> 
@@ -113,7 +122,7 @@
                 <div class="control-group"> 
                     <label class="control-label" for="der">Private Key (DER)</label> 
                     <div class="controls"> 
-<textarea class="span6" id="der" readonly rows="7"></textarea>
+<textarea class="span5" id="der" readonly rows="7"></textarea>
                     </div>
                 </div>
 
@@ -126,7 +135,7 @@
                 <div class="control-group"> 
                     <label class="control-label" for="h160">HASH160</label> 
                     <div class="controls"> 
-                        <input class="span4" id="h160" readonly type="text"> 
+                        <input class="span5" id="h160" readonly type="text"> 
                     </div>
                 </div>
                 </details> 
@@ -147,41 +156,13 @@
                         <div class="btn-group" data-toggle="buttons-radio" id="chain_from"> 
                             <button class="btn active" id="chain_armory" type="button">Armory</button> 
                             <button class="btn" id="chain_electrum" type="button">Electrum</button>
-                            <button class="btn" id="chPlay" title="Random" type="button"><i class="icon-repeat"></i></button><button class="btn hide" id="chStop" title="Stop" type="button"><i class="icon-stop"></i></button>
-                        </div>
+                         </div>
                     </div>
                 </div>
-<details>
-<summary>More</summary>
-                <div class="control-group"> 
-                    <label class="control-label" for="seed">Chain Code</label> 
-                    <div class="controls"> 
-                        <div class="input-append"> 
-                            <input class="span5" id="seed" maxlength="32" readonly type="text">
-                        </div>
-                    </div>
-                </div>
-                <div class="control-group"> 
-                    <label class="control-label" for="expo">Root Key</label> 
-                    <div class="controls"> 
-                        <div class="input-append"> 
-                            <input class="span5" id="expo" maxlength="64" readonly type="text"> 
-                        </div><span class="help-inline" id="progress"></span> 
-                    </div>
-                </div>
-                <div class="control-group"> 
-                    <label class="control-label" for="memo">Paper Backup</label> 
-                    <div class="controls"> 
-                        <textarea class="span6" id="memo" rows="4"></textarea>
-                    </div>
-                </div>
-</details>
-
-
                 <div class="control-group"> 
                     <label class="control-label" for="range">Range</label> 
                     <div class="controls"> 
-                        <input class="span2" id="range" maxlength="3" type="text" value="5"> 
+                        <input class="span1" id="range" type="text" value="5"> 
                         <span class="help-inline" id="elChangeSpan"><nobr><label class="checkbox" for="elChange"><input type="checkbox" id="elChange" checked="checked" disabled>Add change address</label></nobr></span> 
                     </div>
                 </div>
@@ -195,17 +176,52 @@
                     </div>
                 </div>
                 <div class="control-group"> 
-                    <label class="control-label" for="chain">Chain</label> 
+                    <label class="control-label" for="chain_simple">Generate</label> 
                     <div class="controls"> 
-<textarea class="span8" id="chain" readonly rows="13"></textarea>
+                        <div class="btn-group" data-toggle="buttons-radio" id="chain_from"> 
+                            <button class="btn last-child" id="chPlay" title="Random" type="button">Start</button>
+                            <button class="btn hide" id="chStop" title="" type="button">Generating... click to stop.</i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="control-group"> 
+                    <label class="control-label" for="chain">Addresses</label> 
+                    <div class="controls"> 
+<textarea class="span5" id="chain" readonly rows="13"></textarea>
                     </div>
                 </div>
             </fieldset>
             <p id="download">
             <a id="download-button" download target="_blank" >Download addresses.<span id="download-extension"></span></a>
             <br />
-            Note: There is no download confirmation. Please check your default downloads folder after clicking.
+            Note: There is no download confirmation.
+            <br />Please check your default downloads folder after clicking.
             </p>
+            <details>
+            <summary>More</summary>
+                            <div class="control-group"> 
+                                <label class="control-label" for="seed">Chain Code</label> 
+                                <div class="controls"> 
+                                    <div class="input-append"> 
+                                        <input class="span5" id="seed" maxlength="32" readonly type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="control-group"> 
+                                <label class="control-label" for="expo">Root Key</label> 
+                                <div class="controls"> 
+                                    <div class="input-append"> 
+                                        <input class="span5" id="expo" maxlength="64" readonly type="text"> 
+                                    </div><span class="help-inline" id="progress"></span> 
+                                </div>
+                            </div>
+                            <div class="control-group"> 
+                                <label class="control-label" for="memo">Paper Backup</label> 
+                                <div class="controls"> 
+                                    <textarea class="span5" id="memo" rows="4"></textarea>
+                                </div>
+                            </div>
+            </details>
             </form>
         </div>
 
@@ -223,41 +239,48 @@
                 </div>
                 <div class="control-group"> 
                     <label class="control-label" for="txAddr">Source Address</label> 
-                    <div class="controls"> 
-                        <input class="span4" id="txAddr" type="text">
-                        <div class="input-prepend"> <span class="add-on">BTC</span><input class="span2" id="txBalance" readonly type="text"> 
-                        </div>
-                        <button class="btn" id="txGetUnspent" title="Reload" type="button"><i class="icon-repeat"></i></button> 
-                        <button class="btn" data-target="#txUnspentForm" data-toggle="collapse" id="txToggle" type="button">Edit Inputs</button> 
+                    <div class="controls">
+                    <input class="span5" id="txAddr" type="text">
+                        <span class="input-prepend"> <span class="add-on">BTC</span><input class="span2" id="txBalance" readonly type="text"> 
+                        </span>
+                        <br />
+                        <button class="btn" id="txGetUnspent" title="Reload" type="button">Refresh Balance</button>
                     </div>
                 </div>
+
+                <div class="control-group txCC"> 
+                    <label class="control-label" for="txDest">Destination Addresses</label> 
+                    <div class="controls"> 
+                        <input class="span5" id="txDest" class="txDest" type="text" autocomplete="off"> 
+                        <div class="input-prepend"> <span class="add-on">BTC</span><input class="span2" id="txValue" type="text" autocomplete="off"> 
+                        </div>                    
+                        <span class="btn-group help-inline errormsg">
+                            <button class="btn" id="txAddDest" type="button">+</button> 
+                            <button class="btn" id="txRemoveDest" type="button" disabled>&ndash;</button> 
+                        </span> 
+                    </div>
+                </div>
+
+                <div class="control-group"> 
+                    <label class="control-label" >Inputs</label> 
+                <button class="btn" data-target="#txUnspentForm" data-toggle="collapse" id="txToggle" type="button">Edit Inputs</button>
                 <div class="collapse" id="txUnspentForm"> 
                     <div class="control-group"> 
                         <label class="control-label" for="txBBE">Get History From</label> 
                         <div class="controls"> 
                             <div class="btn-group" data-toggle="buttons-radio" id="txType"> 
-                                <button class="btn active" id="txBCI" type="button">BlockChain Info</button> 
-                                <button class="btn" id="txBBE" type="button">Bitcoin Block Explorer</button> 
+                                <button class="btn active" id="txBCI" type="button">BlockChain Info</button>
+                                <button class="btn" id="txBBE" type="button">Bitcoin Block Explorer</button>
                             </div>
                         </div>
                     </div>
                     <div class="control-group"> 
                         <label class="control-label" for="txUnspent">Transaction History</label> 
                         <div class="controls"> 
-<textarea class="span8" id="txUnspent" rows="16"></textarea>
+<textarea class="span5" id="txUnspent" rows="16"></textarea>
                         </div>
                     </div>
                 </div>
-                <div class="control-group txCC"> 
-                    <label class="control-label" for="txDest">Destination Address</label> 
-                    <div class="controls"> 
-                        <input class="span4" id="txDest" class="txDest" type="text" autocomplete="off"> 
-                        <div class="input-prepend"> <span class="add-on">BTC</span><input class="span2" id="txValue" type="text" autocomplete="off"> 
-                        </div><span class="help-inline errormsg">
-                            <button class="btn" id="txAddDest" type="button">+</button> 
-                            <button class="btn" id="txRemoveDest" type="button" disabled>&ndash;</button> 
-                        </span> 
-                    </div>
                 </div>
 
 
@@ -265,23 +288,34 @@
                     <label class="control-label" for="txFee">Fee</label> 
                     <div class="controls"> 
                         <div class="input-prepend"><span class="add-on">BTC</span><input class="span2" id="txFee" type="text" value="0.0005"></div>
-                        <span class="help-inline errormsg"><button class="btn" id="txRebuild" type="button" title="ECDSA signatures require a random number which means signing the same data twice results in different sigs.">Re-sign</button>
-                        <button class="btn" id="txSend" type="button">Send Transaction</button></span> 
                     </div>
                 </div>
+
+                <div class="control-group"> 
+                    <label class="control-label" >Finalize</label> 
+                    <div class="controls"> 
+                            <div class="btn-group">
+                            <button class="btn" id="txRebuild" type="button" title="ECDSA signatures require a random number which means signing the same data twice results in different sigs.">Re-sign</button>
+                            <button class="btn" id="txSend" type="button">Send Transaction</button>
+                    </div> 
+                    </div>
+                </div>
+
+
+
                 <details>
                     <summary>Transaction Details</summary>
                     <div class="control-group"> 
 
                         <label class="control-label" for="txJSON">JSON Transaction</label> 
                         <div class="controls"> 
-                            <textarea class="span8" id="txJSON" rows="17"></textarea>
+                            <textarea class="span5" id="txJSON" rows="17"></textarea>
                         </div>
                     </div>
                     <div class="control-group"> 
                         <label class="control-label" for="txHex">Raw Transaction</label> 
                         <div class="controls"> 
-                            <textarea class="span8" id="txHex" rows="4"></textarea>
+                            <textarea class="span5" id="txHex" rows="4"></textarea>
                         </div>
                 </div>
                 </details>
@@ -314,7 +348,7 @@
                                 </div>
                             </div>
                             <div class="control-group"> 
-<textarea class="span6" id="src" rows="10"></textarea>
+<textarea class="span5" id="src" rows="10"></textarea>
                             </div>
                             <div> <span id="hint_from">&nbsp;</span> 
                             </div>
@@ -337,7 +371,7 @@
                             </div>
 
                             <div class="control-group"> 
-<textarea class="span6" id="dest" readonly rows="10"></textarea>
+<textarea class="span5" id="dest" readonly rows="10"></textarea>
                             </div>
                             <div> <span id="hint_to">&nbsp;</span> 
                             </div>
@@ -352,7 +386,7 @@
         <div class="tab-pane fade" id="sign">
             <h2>Sign &amp; Verify</h2> 
             <form action="/" class="form-vertical" method="get" id="sgForm">
-            <fieldset> <h2>Sign</h2> 
+            <fieldset><details open> <summary><big>Sign Message</big></summary>
                 <div class="control-group"> 
                     <label class="control-label" for="sgSec">Private Key</label> 
                     <div class="controls"> 
@@ -363,19 +397,19 @@
                 <div class="control-group"> 
                     <label class="control-label" for="sgAddr">Address</label> 
                     <div class="controls"> 
-                        <input class="span4" id="sgAddr" readonly type="text"> 
+                        <input class="span5" id="sgAddr" readonly type="text"> 
                     </div>
                 </div>
                 <div class="control-group"> 
                     <label class="control-label" for="sgMsg">Message</label> 
                     <div class="controls"> 
-                        <textarea class="span8" id="sgMsg" rows="10"></textarea>
+                        <textarea class="span5" id="sgMsg" rows="10"></textarea>
                     </div>
                 </div>
                 <div class="control-group"> 
                     <label class="control-label" for="sgSig">Signature</label> 
                     <div class="controls"> 
-                        <input class="span8" id="sgSig" type="text" readonly> 
+                        <input class="span5" id="sgSig" type="text" readonly> 
                     </div>
                 </div>
                 <div class="control-group"> 
@@ -384,21 +418,22 @@
                         <button class="btn" id="sgSign" type="button">Sign Message</button> 
                     </div>
                 </div>
+            </details>
             </fieldset>
             </form>
         <form action="/" class="form-vertical" method="get" id="vrForm">
-            <fieldset> <h2>Verify</h2> 
+            <fieldset><details> <summary><big>Verify Message</big></summary>
                 <div class="control-group"> 
                     <label class="control-label" for="vrMsg">Message</label> 
                     <div class="controls"> 
-                        <textarea class="span8" id="vrMsg" rows="10"></textarea>
+                        <textarea class="span5" id="vrMsg" rows="10"></textarea>
                     </div>
                 </div>
 
                 <div class="control-group"> 
                     <label class="control-label" for="vrSig">Signature</label> 
                     <div class="controls"> 
-                        <input class="span8" id="vrSig" type="text"> 
+                        <input class="span5" id="vrSig" type="text"> 
                         <span class="help-inline errormsg"></span> 
                     </div>
                 </div>
@@ -410,6 +445,7 @@
                         <span id="vrRes" class="help-inline errormsg"></span>
                     </div>
                 </div>
+            </details>
             </fieldset>
             </form>
         </div>

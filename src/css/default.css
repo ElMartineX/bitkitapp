@@ -78,7 +78,7 @@ body.sidebar-open #sidebar {
   padding: 10px 0px 10px 24px;
   -webkit-user-select: none;
   white-space: nowrap;
-  width:230px;
+  width:170px;
 }
 
 #sidebar li:hover {
@@ -103,7 +103,7 @@ body.sidebar-open #sidebar {
 
 #sidebar {
   display: -webkit-box;
-  width: 280px;
+  width: 170px;
   height:100%;
   margin:0px;
   position:fixed;
@@ -114,12 +114,12 @@ body.sidebar-open #sidebar {
 
 
 .tab-content{
-  width:100%;
+  width:430px;
   color: #EBEBEB;
   height:100%;
   margin:0px;
   position:fixed;
-  left:230px;
+  left:170px;
   padding-left:36px;
   top:0px;
   bottom:0px;
@@ -149,8 +149,9 @@ body.sidebar-open #sidebar {
   display:none;
 }
 
-prepend .add-on {
+.input-prepend .add-on {
   height:30px;
+  background-color:transparent;
 }
 
 .input-large, .input-xlarge, .input-xxlarge, input[class*="span"], select[class*="span"], textarea[class*="span"], .uneditable-input {
@@ -159,4 +160,18 @@ prepend .add-on {
 
 .input-append .add-on, .input-prepend .add-on {
   height:30px;
+  }
+
+.btn-group>.btn{
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.input-prepend .add-on:first-child, .input-prepend .btn:first-child,textarea,.btn-group>.btn:first-child,.btn-group>.btn:last-child, .btn-group>.dropdown-toggle,.btn, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  }
+  textarea{
+    height:128px;
   }
