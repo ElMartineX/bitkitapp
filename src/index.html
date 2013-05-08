@@ -7,7 +7,6 @@
     <meta content="bitcoin bitkit bit kit coin chrome packaged application app brainwallet" name="description">
     <meta content="John Henry" name="author">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="css/default.css" rel="stylesheet">
 <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -49,7 +48,7 @@
 <!-- Generate -->
         <div class="tab-pane fade in active" id="generate"> 
             <h1>Generate</h1>
-            <form action="/" class="form-horizontal" method="get">
+            <form action="/" class="form-vertical" method="get">
             <fieldset>
                             <div class="control-group"> 
                                 <label class="control-label" for="addr">Address</label> 
@@ -140,7 +139,7 @@
 <!-- Generate Many -->
         <div class="tab-pane fade" id="generate-many">
             <h1>Generate Many</h1>
-            <form action="/" class="form-horizontal" method="get">
+            <form action="/" class="form-vertical" method="get">
             <fieldset> 
                 <div class="control-group"> 
                     <label class="control-label" for="chain_simple">Generation Method</label> 
@@ -213,7 +212,7 @@
 <!-- Send -->
         <div class="tab-pane fade" id="send">
             <h1>Send</h1> 
-            <form action="/" class="form-horizontal" method="get">
+            <form action="/" class="form-vertical" method="get">
             <fieldset> 
                 <div class="control-group"> 
                     <label class="control-label" for="txSec">Private Key</label> 
@@ -352,7 +351,7 @@
 <!-- Sign & Verify -->
         <div class="tab-pane fade" id="sign">
             <h2>Sign &amp; Verify</h2> 
-            <form action="/" class="form-horizontal" method="get" id="sgForm">
+            <form action="/" class="form-vertical" method="get" id="sgForm">
             <fieldset> <h2>Sign</h2> 
                 <div class="control-group"> 
                     <label class="control-label" for="sgSec">Private Key</label> 
@@ -387,7 +386,7 @@
                 </div>
             </fieldset>
             </form>
-        <form action="/" class="form-horizontal" method="get" id="vrForm">
+        <form action="/" class="form-vertical" method="get" id="vrForm">
             <fieldset> <h2>Verify</h2> 
                 <div class="control-group"> 
                     <label class="control-label" for="vrMsg">Message</label> 

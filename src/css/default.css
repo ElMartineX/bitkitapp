@@ -148,3 +148,15 @@ body.sidebar-open #sidebar {
   width:256px;
   display:none;
 }
+
+prepend .add-on {
+  height:30px;
+}
+
+.input-large, .input-xlarge, .input-xxlarge, input[class*="span"], select[class*="span"], textarea[class*="span"], .uneditable-input {
+  min-height: 30px;
+  }
+
+.input-append .add-on, .input-prepend .add-on {
+  height:30px;
+  }
